@@ -1,0 +1,432 @@
+/*imagen de body*/
+body {
+
+    background-image: url(../images/fondo5.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    }
+/*##############################################*/
+
+/*formulario de busqueda*/
+form {
+    width: 200px;
+    margin: 20px auto;
+}
+
+/*##############################################*/
+/*input */
+.buscar{
+    
+  height: 40px;
+  border-radius: 20em; 
+  text-align: center; 
+}
+input {  
+    background-color: transparent;
+    color: rgb(15, 15, 15);
+    color:rgb(167, 7, 7);
+  font-weight:bold;
+  font: size 20px;
+  text-shadow: 0 1px 0 rgb(75, 71, 74), 
+  0 2px 0 #2889a1,
+  0 3px 0 #bbb,
+  0 4px 0 #b9b9b9,
+  0 5px 0 #aaa,
+  0 6px 1px rgba(199, 28, 28, 0.1),
+  0 0 5px rgba(0,0,0,.1),
+  0 1px 3px rgba(0,0,0,.3),
+  0 3px 5px rgba(0,0,0,.2),
+  0 5px 10px rgba(0,0,0,.25),
+  0 10px 10px rgba(0,0,0,.2),
+  0 20px 20px rgba(0,0,0,.15);
+}
+
+/*##############################################*/
+
+/*toda la carta*/
+.poke-card {    
+    background-color:transparent;
+    width: 350px;
+    border-radius: 16px;
+    overflow: hidden;
+    -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);    
+}
+.poke-card::before {
+    content: '';
+   /* background: radial-gradient(black 33%, transparent 33%);
+    */background-size: 3px 3px;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: -1;   
+}
+
+.img-container {
+    position: relative;
+    width: auto;
+    margin:  auto;
+}
+
+.poke-stats div {
+    /*animaciontexto*/
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 5px;
+    font-size: 18px;
+    color: rgb(15, 15, 15);
+
+    color:white;
+  font-weight:bold;
+  font-size:25px;
+  text-shadow: 0 1px 0 rgb(75, 71, 74), 
+  0 2px 0 #2889a1,
+  0 3px 0 #bbb,
+  0 4px 0 #b9b9b9,
+  0 5px 0 #aaa,
+  0 6px 1px rgba(199, 28, 28, 0.1),
+  0 0 5px rgba(0,0,0,.1),
+  0 1px 3px rgba(0,0,0,.3),
+  0 3px 5px rgba(0,0,0,.2),
+  0 5px 10px rgba(0,0,0,.25),
+  0 10px 10px rgba(0,0,0,.2),
+  0 20px 20px rgba(0,0,0,.15);
+}
+.poke-types{
+    text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem; 
+  color: #ffffff;
+  
+  height: 0;
+  left: 0;
+  letter-spacing: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  animation: move linear 2000ms infinite;
+  z-index: 2
+}
+/*Animación para rotar las sombras*/
+@keyframes move {
+  0% {
+    text-shadow:
+      4px -4px 0 #da0641,
+      3px -3px 0 #da0641,
+      2px -2px 0 #da0641,
+      1px -1px 0 #da0641,
+      -4px 4px 0 #13f1fc,
+      -3px 3px 0 #13f1fc,
+      -2px 2px 0 #13f1fc,
+      -1px 1px 0 #13f1fc
+    ;
+  }
+  25% {
+    text-shadow:
+      -4px -4px 0 #13f1fc,
+      -3px -3px 0 #13f1fc,
+      -2px -2px 0 #13f1fc,
+      -1px -1px 0 #13f1fc,
+      4px 4px 0 #da0641,
+      3px 3px 0 #da0641,
+      2px 2px 0 #da0641,
+      1px 1px 0 #da0641
+    ;
+  }
+  50% {
+    text-shadow:
+      -4px 4px 0 #da0641,
+      -3px 3px 0 #da0641,
+      -2px 2px 0 #da0641,
+      -1px 1px 0 #da0641,
+      4px -4px 0 #13f1fc,
+      3px -3px 0 #13f1fc,
+      2px -2px 0 #13f1fc,
+      1px -1px 0 #13f1fc
+    ;
+  }
+  75% {
+    text-shadow:
+      4px 4px 0 #13f1fc,
+      3px 3px 0 #13f1fc,
+      2px 2px 0 #13f1fc,
+      1px 1px 0 #13f1fc,
+      -4px -4px 0 #da0641,
+      -3px -3px 0 #da0641,
+      -2px -2px 0 #da0641,
+      -1px -1px 0 #da0641
+    ;
+  }
+  100% {
+    text-shadow:
+      4px -4px 0 #da0641,
+      3px -3px 0 #da0641,
+      2px -2px 0 #da0641,
+      1px -1px 0 #da0641,
+      -4px 4px 0 #13f1fc,
+      -3px 3px 0 #13f1fc,
+      -2px 2px 0 #13f1fc,
+      -1px 1px 0 #13f1fc
+    ;
+  }
+}
+
+.poke-types div {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    
+}
+
+.poke-img {
+    width: 80%;
+    height: 80%;    
+   
+}
+
+/*efecto nombre */
+.nombre{
+    color: #ffffff;
+  
+  height: 0;
+  left: 0;
+  letter-spacing: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  animation: move linear 2000ms infinite;
+  z-index: 2
+}
+/*Animación para rotar las sombras*/
+@keyframes move {
+  0% {
+    text-shadow:
+      4px -4px 0 #da0641,
+      3px -3px 0 #da0641,
+      2px -2px 0 #da0641,
+      1px -1px 0 #da0641,
+      -4px 4px 0 #13f1fc,
+      -3px 3px 0 #13f1fc,
+      -2px 2px 0 #13f1fc,
+      -1px 1px 0 #13f1fc
+    ;
+  }
+  25% {
+    text-shadow:
+      -4px -4px 0 #13f1fc,
+      -3px -3px 0 #13f1fc,
+      -2px -2px 0 #13f1fc,
+      -1px -1px 0 #13f1fc,
+      4px 4px 0 #da0641,
+      3px 3px 0 #da0641,
+      2px 2px 0 #da0641,
+      1px 1px 0 #da0641
+    ;
+  }
+  50% {
+    text-shadow:
+      -4px 4px 0 #da0641,
+      -3px 3px 0 #da0641,
+      -2px 2px 0 #da0641,
+      -1px 1px 0 #da0641,
+      4px -4px 0 #13f1fc,
+      3px -3px 0 #13f1fc,
+      2px -2px 0 #13f1fc,
+      1px -1px 0 #13f1fc
+    ;
+  }
+  75% {
+    text-shadow:
+      4px 4px 0 #13f1fc,
+      3px 3px 0 #13f1fc,
+      2px 2px 0 #13f1fc,
+      1px 1px 0 #13f1fc,
+      -4px -4px 0 #da0641,
+      -3px -3px 0 #da0641,
+      -2px -2px 0 #da0641,
+      -1px -1px 0 #da0641
+    ;
+  }
+  100% {
+    text-shadow:
+      4px -4px 0 #da0641,
+      3px -3px 0 #da0641,
+      2px -2px 0 #da0641,
+      1px -1px 0 #da0641,
+      -4px 4px 0 #13f1fc,
+      -3px 3px 0 #13f1fc,
+      -2px 2px 0 #13f1fc,
+      -1px 1px 0 #13f1fc
+    ;
+  }
+ 
+}
+/*####################################################*/
+/*botonflo*Redes*/
+#btn-mas {
+    display: none;
+    
+}
+
+.app {
+    position: fixed;
+    bottom: 80px;
+    left: 20px;
+    padding-left: 10px;
+    background-color: transparent;
+    
+}
+
+.redes a {
+    display: block;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgb(0, 0, 0);
+    transition: all 500ms ease;
+    font-size: 25px;
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+    background-color: transparent;
+}
+
+.fa-facebook-f {
+    background: hsl(209deg, 90%, 27%);
+    color: rgb(255, 255, 255);
+}
+
+.fa-facebook-f:hover {
+    background: rgba(255, 255, 255, 0.815);
+    color: hsl(209deg, 90%, 27%);
+}
+
+.fa-youtube {
+    color: #fff;
+    background: red;
+}
+
+.fa-youtube:hover {
+    background: #fff;
+    color: red;
+}
+
+.fa-whatsapp {
+    color: rgb(255, 255, 255);
+    background: hsl(130deg, 88%, 37%);
+}
+
+.fa-whatsapp:hover {
+    color: rgb(5, 480, 5);
+    background: rgba(255, 255, 255, 0.945);
+}
+
+.fa-twitter {
+    background-color: rgb(44, 144, 243);
+    color: rgb(255, 255, 255);
+}
+
+.fa-twitter:hover {
+    background: rgba(255, 255, 255, 0.945);
+    color: rgb(44, 114, 243);
+}
+
+.fa-github {
+    background: rgba(0, 0, 0, 0.925);
+    color: rgb(255, 255, 255);
+}
+
+.fa-github:hover {
+    background: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 0.925);
+
+}
+
+.fa-telegram-plane {
+    background: rgb(0, 102, 255);
+    color: rgb(255, 255, 255);
+}
+
+.fa-telegram-plane:hover {
+    background: rgba(255, 255, 255, 0.815);
+    color: rgb(0, 102, 255);
+}
+
+#btn-mas:checked~.redes a {
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+
+#btn-mas:checked~.btn-mas .fa-plus {
+    transform: rotate(137deg);
+    font-size: 23px;
+}
+
+
+.fa-plus {
+    padding-top: 15px;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    background: transparent;
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgb(0, 0, 0);
+    transition: all 500ms ease;
+    font-size: 20px;
+}
+
+.fa-plus:hover {
+    background: rgb(0, 102, 255);
+    transform: scale(0.9);
+}
+
+/*#######################################################*/
+/*menu*/
+#sidebar {
+  position: fixed;
+  width: 20%;
+  height: 50%;
+  background:transparent;
+  left: -400px;
+  transition: all 500ms linear;
+}
+
+#sidebar.active {
+  left: 0;
+}
+#sidebar ul li {
+  color: rgba(14, 12, 12, 0.9);
+  text-align: center;
+  padding: 15px 10px;
+  list-style: none;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+}
+
+#sidebar .toggle-btn {
+  position: absolute;
+  left: 400px;
+  top: 20px;
+  cursor: pointer;
+}
+
+#sidebar .toggle-btn span {
+  display: block;
+  width: 40px;
+  text-align: center;
+  font-size: 30px;
+}
