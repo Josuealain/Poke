@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar | Pokemon</title>
+    <!--iconosderedes-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="./js/poke.js" type="text/javascript" defer></script>
+    <link href="./css/estilos.css" rel="stylesheet" />
+</head>
+<body>
+     <!--Menu-->
+    <div id="sidebar" >
+        <div class="toggle-btn" >
+          <span>&#9776</span>
+        </div>
+        <ul>
+          <li>hola</li>
+          <li>esto es</li>
+          <li>una prueba</li>
+        </ul>
+      </div>
+    <!--fin Menu-->
+      <center><h1 >POKEMON API</h1></center>
+   
+      <!--Buscar-->
+    <form action="" onsubmit="searchPokemon(event)">
+        <input type="text"  class="buscar" name="pokemon" autocomplete="off" placeholder="BUSCA TU POKEMON">
+    </form>
+    <!--finbuscar-->
+
+      <!--cardpoke-->
+    <center> 
+        <div data-poke-card class="poke-card">
+        <div data-poke-name class="nombre"></div>
+        <div data-poke-img-container class="img-container">
+            <br>
+            <img data-poke-img class="poke-img" src="./images/quien_es_ese_pokemon__who_s_that_poke___by_shikomt_by_shikomt_dbf1jrd-fullview.jpg"/>
+        </div>
+        <div data-poke-id style="display: none;"></div>   
+        <div data-poke-types class="poke-types"> </div>
+        <div data-poke-stats class="poke-stats"></div>
+     </div></center>
+     <!--fincarpoke-->
+    <!--Botones-->
+    <div class="app">
+        <input type="checkbox" id="btn-mas">
+        <div class="redes">
+            <a target="_blank" href="https://www.facebook.com/josuealain.garciagarrido" class="fab fa-facebook-f"> </a>
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=+5217291550042&amp;text=Hola un gusto saludarlo" class="fab fa-whatsapp"> </a>
+             <a target="_blank" href="https://github.com/Josuealain" class="fab fa-github"> </a>
+        </div>
+        <div class="btn-mas">
+            <label for="btn-mas" class="fas fa-plus"></label>
+        </div>
+    </div>
+   <!--fin Botones-->
+</body>
+</html>
